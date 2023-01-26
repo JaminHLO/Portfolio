@@ -1,0 +1,90 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+}
+
+header {
+    position: fixed;
+    color: white;
+    border-bottom: 10px;
+    border-color: black;
+    height: 20%;
+}
+
+header,
+footer {
+  height: 60px;
+  width: 80%;
+  line-height: 60px;
+  background-color: yellow;
+}
+
+li {
+    display: inline; 
+}
+
+body {
+    background-color: black;
+}
+
+
+
+main {
+    /*background-color: rgb(75, 74, 74);*/
+    background-image: url(".../assets/images/sophia.jpg");
+    padding: 30px;
+    display: flex; /*start flex */
+    align-content: space-around;
+    /*flex-direction: row; */
+    justify-content: space-evenly; /*space-between */ 
+    height: 80vh;
+    align-items:center;
+    gap: 20px;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 30;
+    color: Black;
+}
+
+button {
+    padding: 10px 50px;
+    border-radius: 10px;
+    box-shadow: 3px 10px 15px gray;
+    background: white;
+    color: black;
+    transform: rotate(10deg);
+    transform: skew(10deg);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background: lightgray;
+    transform: scale(1.2);
+}
+
+.flex-item {
+    border: 2px solid rgb(75, 74, 74);
+    color: white;
+    height: 200px;
+    flex: 1;
+}
+
+.big-item {
+    flex: 2;
+}
+
+
+@media screen and (max-width: 500px) {
+    main {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .big-items {
+        flex: 1;
+    }
+}
