@@ -4,7 +4,9 @@
 }
 
 body {
-    background-image: url("../images/snow2000.jpg");
+    /*background-image: url("../images/snow2000.jpg");*/
+    background: rgb(2,0,36);
+    background: linear-gradient(151deg, rgba(2,0,36,1) 0%, rgba(165,209,221,1) 35%, rgba(167,205,224,1) 76%);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
