@@ -1,90 +1,153 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20;
-}
-
-header {
-    position: fixed;
-    color: white;
-    border-bottom: 10px;
-    border-color: black;
-    height: 20%;
-}
-
-header,
-footer {
-  height: 60px;
-  width: 80%;
-  line-height: 60px;
-  background-color: yellow;
-}
-
-li {
-    display: inline; 
+    font-size: 25px;
 }
 
 body {
-    background-color: black;
+    background-image: url("../images/snow2000.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
-
-main {
-    /*background-color: rgb(75, 74, 74);*/
-    background-image: url(".../assets/images/sophia.jpg");
-    padding: 30px;
-    display: flex; /*start flex */
-    align-content: space-around;
-    /*flex-direction: row; */
-    justify-content: space-evenly; /*space-between */ 
-    height: 80vh;
-    align-items:center;
-    gap: 20px;
-    
+header, footer {
+    background-color: rgb(177, 162, 150);
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: space-between;
+    padding-inline-start: 20px;
+    box-shadow: 3px 10px 15px gray;
+    border-radius: 10px;
 }
 
 h1 {
-    text-align: center;
-    font-size: 30;
-    color: Black;
+    color: #5D5C61;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 2px 2px 5px white;
+  }
+
+ ul {
+    min-width: 300px;
+    margin-top: 35px;
+    margin-right: 25px;
+  }
+ li {
+    display: inline;
+    }
+
+  nav a {
+    color: #5D5C61;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #fff;
+  }
+
+main {
+    display: flex;
+    flex: 1 2 initial;
+    max-width: 1200px;
+    margin: 2% auto;
+    flex-direction:column;
+    height: 90vh;
+    gap: 20px;
 }
 
-button {
-    padding: 10px 50px;
+section {
+    display:flex;
+    margin-left: 20px;
+}
+
+h2 {
+    display:flex;
+    text-align:flex-start;
+    font-size: 30px;
+    min-width: 200px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-weight: bold;
+    flex: initial;
+}
+
+article {
+    display:flex;
+    flex-flow: row, wrap;
+    justify-content: flex-start;
+    max-width: 500px;
+    /*position: absolute;
+    margin-left: 200px;*/
+}
+
+.about-me {
+    margin: 50px;
+    height: 300px;
+}
+
+
+.projects-list {
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project {
+    display:flex;
+    border: 2px solid transparent;
+    padding: 10px;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 3px 10px 15px gray;
-    background: white;
-    color: black;
-    transform: rotate(10deg);
-    transform: skew(10deg);
+    transform: rotate(1deg);
     cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-button:hover {
-    background: lightgray;
-    transform: scale(1.2);
-}
-
-.flex-item {
-    border: 2px solid rgb(75, 74, 74);
-    color: white;
-    height: 200px;
+    transition: all 0.2s ease;
     flex: 1;
 }
 
-.big-item {
+.project:hover {
+    border: 2px solid rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 200px;
+    height: 200px;
+}
+
+.featured {
     flex: 2;
 }
 
 
-@media screen and (max-width: 500px) {
+
+/*
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  }
+*/
+/*
+span[data-descr]:hover::after{
+content:attr(data-descr);
+*/
+
+
+@media screen and (max-width: 768px) {
     main {
         flex-direction: column;
-        gap: 0;
+        gap: 1;
     }
 
-    .big-items {
+    .featured {
         flex: 1;
     }
 }
