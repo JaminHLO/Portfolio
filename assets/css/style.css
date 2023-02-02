@@ -1,108 +1,120 @@
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
 body {
-    /*background-image: url("../images/snow2000.jpg");*/
-    background: rgb(2,0,36);
-    background: linear-gradient(151deg, rgba(2,0,36,1) 0%, rgba(165,209,221,1) 35%, rgba(167,205,224,1) 76%);
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
+    background: black;
+    background-position: center;
 }
 
 
 header, footer {
-    background-color: rgb(177, 162, 150);
+    background: black;
     display: flex;
     flex-flow: row, nowrap;
     justify-content: space-between;
-    padding-inline-start: 20px;
-    box-shadow: 3px 10px 15px gray;
-    border-radius: 10px;
+    padding-inline-start: 16px;
+    flex: 0, 100%;
+    /*box-shadow: 3px 10px 15px gray;
+    border-radius: 10px;*/
 }
 
 h1 {
-    color: #5D5C61;
+    color: lightgrey;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
-    text-shadow: 2px 2px 5px white;
+    text-shadow: 1px 1px 1px white;
   }
 
- ul {
-    min-width: 300px;
-    margin-top: 35px;
-    margin-right: 25px;
-  }
- li {
-    display: inline;
-    }
+h2 {
 
-  nav a {
-    color: #5D5C61;
+    font-size: 25px;
+    min-width: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+h3, h4 {
+    font-size: 18px;
+    color: white;
+    text-align:center;
+}
+
+nav {
+    display: flex;
+    background: black;
+    flex-flow: row, nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    color: lightgrey;
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
   }
 
-  nav a:hover {
-    color: #fff;
+nav a:hover {
+    text-decoration-line: underline;
   }
 
+
+ ul li {
+    display: inline;
+    }
+
+
+
 main {
+    background: linear-gradient(331deg, rgb(88, 88, 88) 0%, rgb(190, 190, 190) 45%, rgb(48, 47, 47) 100%);
+    background-repeat: no-repeat;
     display: flex;
-    flex: 1 2 initial;
-    max-width: 1200px;
-    margin: 2% auto;
-    flex-direction:column;
-    height: 90vh;
+    flex-direction: column;
     gap: 20px;
 }
 
 section {
-    display:flex;
+    display: flex;
     margin-left: 20px;
 }
 
-h2 {
-    display:flex;
-    text-align:flex-start;
-    font-size: 30px;
-    min-width: 200px;
+article {
     color: white;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    font-weight: bold;
-    flex: initial;
 }
 
-article {
-    display:flex;
-    flex-flow: row, wrap;
-    justify-content: flex-start;
-    max-width: 500px;
-    /*position: absolute;
-    margin-left: 200px;*/
-}
 
 .about-me {
     margin: 50px;
-    height: 300px;
 }
 
 
-.projects-list {
-    display: flex;
+
+.about-me img {
+    height: 300px;
     padding: 50px;
+}
+
+
+.project-list {
+    flex: 1;
+    padding: 50px;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .project {
-    display:flex;
+    width: 400px;
+    /*flex-flow: column, wrap; /**/
     border: 2px solid transparent;
     padding: 10px;
     margin: 20px;
@@ -111,45 +123,44 @@ article {
     transform: rotate(1deg);
     cursor: pointer;
     transition: all 0.2s ease;
-    flex: 1;
+    /*flex: 1 initial;*/
 }
 
 .project:hover {
-    border: 2px solid rgb(255, 255, 255);
     transform: scale(1.05);
+    box-shadow: inset 0px 0px 8px white, 0 0 15px white;
 }
 
 .project img {
-    width: 200px;
-    height: 200px;
+    width: 70%;
+    padding: 10px;
+    margin-top: 80px;
+    /*height: 150px;*/
 }
 
-.featured {
-    flex: 2;
+.featured { 
+    width: 600px;
+    /*flex: 2 initial;*/
 }
 
 
-
-/*
-@media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  }
-*/
 /*
 span[data-descr]:hover::after{
 content:attr(data-descr);
 */
 
 
+
 @media screen and (max-width: 768px) {
-    main {
+    header, footer, main, section, article, nav {
         flex-direction: column;
+        justify-content: space-around;
         gap: 1;
     }
+}
 
-    .featured {
-        flex: 1;
+@media screen and (max-width: 500px) {
+    * {
+        flex-direction: column;
     }
 }
