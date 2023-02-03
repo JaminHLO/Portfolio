@@ -90,14 +90,18 @@ article {
 
 
 .about-me {
-    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 80%;
 }
 
-
+/* .about-me p {
+    align-self: center;
+} */
 
 .about-me img {
-    height: 300px;
-    padding: 50px;
+    height: 100%;
 }
 
 
