@@ -21,8 +21,6 @@ header, footer {
     justify-content: space-between;
     padding-inline-start: 16px;
     flex: 0, 100%;
-    /*box-shadow: 3px 10px 15px gray;
-    border-radius: 10px;*/
 }
 
 h1 {
@@ -42,7 +40,6 @@ h2 {
 }
 
 h3, h4 {
-    display: flex;
     font-size: 18px;
     color: white;
     text-align:center;
@@ -105,7 +102,6 @@ article {
 
 
 .project-list {
-    flex: 1;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -114,8 +110,8 @@ article {
 }
 
 .project {
+    flex-direction: column; 
     width: 400px;
-    /*flex-flow: column, wrap; /**/
     border: 2px solid transparent;
     padding: 10px;
     margin: 20px;
@@ -124,7 +120,6 @@ article {
     transform: rotate(1deg);
     cursor: pointer;
     transition: all 0.2s ease;
-    /*flex: 1 initial;*/
 }
 
 .project:hover {
@@ -133,24 +128,12 @@ article {
 }
 
 .project img {
-    width: 70%;
     padding: 10px;
-    margin-top: 80px;
-    /*height: 150px;*/
 }
 
 .featured { 
     width: 600px;
-    /*flex: 2 initial;*/
 }
-
-
-/*
-span[data-descr]:hover::after{
-content:attr(data-descr);
-*/
-
-
 
 @media screen and (max-width: 768px) {
     header, footer, main, section, article, nav {
