@@ -109,8 +109,8 @@ h3, h4 {
 /* This sets a responable size of my portrait image */
 .about-me img {
     width: 30vw;
+    object-fit: contain;
     max-height: 300px;
-    max-width: 300px;
 }
 
 /* This class defines the flow of my project class items */
