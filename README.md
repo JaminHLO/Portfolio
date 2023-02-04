@@ -11,10 +11,10 @@ This website has been tested to be functional on Chrome, MS Edge, Brave, Samsung
 The site is accessable here: <https://jaminhlo.github.io/Portfolio/>
 
 Screenshot of Menu section of website:
-![nav bar and intro of my portfolio website](assets/port_ss01.jpg)
+![nav bar and intro of my portfolio website](assets/images/port_ss01.jpg)
 
 Screenshot of Services section of website:
-![website as viewed from a Samsung Galaxy S8+](assets/port_ss02.jpg)
+![website as viewed from a Samsung Galaxy S8+](assets/images/port_ss02.jpg)
 
 ## Credits
 
