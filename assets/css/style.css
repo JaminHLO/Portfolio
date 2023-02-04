@@ -111,6 +111,7 @@ h3, h4 {
     width: 30vw;
     object-fit: contain;
     max-height: 300px;
+    float:right;
 }
 
 /* This class defines the flow of my project class items */
@@ -131,6 +132,11 @@ h3, h4 {
     box-shadow: 3px 10px 15px gray;
     cursor: pointer;
     transition: all 0.2s ease;
+}
+
+.project a img {
+    display: flex;
+    width:100%;
 }
 
 /* This adds an effect when a user hovers over a project class item*/
