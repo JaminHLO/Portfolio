@@ -55,11 +55,6 @@ nav a:hover {
     text-decoration-line: underline;
   }
 
-/* Menu lists display inline */
- /* ul li {
-    display: inline;
-    } */
-
 /* Appearance spacing and flow of the main attribute */
 main {
     display: flex;
