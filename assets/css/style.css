@@ -56,9 +56,9 @@ nav a:hover {
   }
 
 /* Menu lists display inline */
- ul li {
+ /* ul li {
     display: inline;
-    }
+    } */
 
 /* Appearance spacing and flow of the main attribute */
 main {
@@ -84,7 +84,7 @@ h2 {
     text-shadow: 1px 1px 1px grey;
 }
 
-/* This sets the appearance for the sub headimgs for the project items */
+/* Sets the appearance for the sub headimgs for the project items */
 h3, h4 {
     font-size: 18px;
     color: white;
@@ -92,21 +92,21 @@ h3, h4 {
     text-shadow: 1px 1px 1px grey;
 }
 
-/* This class defines the flow of the about me section elements */
+/* Class defines the flow of the about me section elements */
 .about-me {
     display: flex;
     flex-flow: row, wrap;
     justify-content: space-around;
 }
 
-/* This sets the appearance for the about me destription text */
+/* Sets the appearance for the about me destription text */
 .about-me p {
     font: 18px;
     padding: 2vw;
 
 }
 
-/* This sets a responable size of my portrait image */
+/* Sets a responable size of my portrait image */
 .about-me img {
     width: 30vw;
     object-fit: contain;
@@ -114,7 +114,7 @@ h3, h4 {
     float:right;
 }
 
-/* This class defines the flow of my project class items */
+/* Class defines the flow of my project class items */
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -122,7 +122,7 @@ h3, h4 {
     align-items: flex-start;
 }
 
-/* This class defines the appearance of the project items */
+/* Class defines the appearance of the project items */
 .project {
     flex-direction: column; 
     width: 30vw;
@@ -134,28 +134,27 @@ h3, h4 {
     transition: all 0.2s ease;
 }
 
+/* Stablizes image size to link frame */
 .project a img {
     display: flex;
     width:100%;
 }
 
-/* This adds an effect when a user hovers over a project class item*/
+/* Adds an effect when a user hovers over a project class item*/
 .project:hover {
     transform: scale(1.05);
     transform: rotate(1deg);
     box-shadow: inset 0px 0px 8px white, 0 0 15px white;
 }
 
-/* The featured class increases the size of the project display */
+/* Featured class increases the size of the project display */
 .featured { 
     width: 60vw;
 }
 
-/* This is my media section that helps displays on smaller resolutions and devices */
+/* Media section that helps displays on smaller resolutions and devices */
 @media all and (max-width: 768px) {
     header, footer, main, section, article, nav, p {
-        display:flex;
-        flex-flow: column, wrap;
         justify-content: center;
         margin: 0; 
         padding: 0; 
@@ -165,9 +164,24 @@ h3, h4 {
     h1 {
         font-size: 20px;
     }
-    
-    h2, h3 {
+    h2, h3, a {
         font-size:18px;
     }
+}
 
+/* Media section that helps displays on even smaller resolutions and devices */
+@media all and (max-width: 425px) {
+    header, footer, main, section, article, nav, p {
+        justify-content: center;
+        margin: 0; 
+        padding: 0; 
+        font-size:12px;
+    }
+    /* reduces size of headings even further */
+    h1 {
+        font-size: 16px;
+    }
+    h2, h3, a {
+        font-size:14px;
+    }
 }
