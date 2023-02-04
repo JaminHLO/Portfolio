@@ -1,12 +1,12 @@
 
-
+/* Global default text color and font  */
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    /* box-sizing: border-box; */
     color: white;
 }
 
+/* Default appearance and flow of body of page */
 body {
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ body {
     background-position: center;
 }
 
-
+/* Appearance and flow of header and footer */
 header, footer {
     display: flex;
     background: black;
@@ -24,6 +24,7 @@ header, footer {
     flex: 0, 100%;
 }
 
+/* Appearance and font of top level heading */
 h1 {
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -32,6 +33,7 @@ h1 {
     text-shadow: 1px 1px 1px grey;
   }
 
+/* Appearance and flow of nav bar */
 nav {
     display: flex;
     background: black;
@@ -40,6 +42,7 @@ nav {
     align-items: center;
 }
 
+/* Text appearance for navigation bar links */
 nav a {
     color: lightgrey;
     padding: 10px;
@@ -47,48 +50,41 @@ nav a {
     text-decoration: none;
   }
 
+/* Navigation bar hover underline effect */
 nav a:hover {
     text-decoration-line: underline;
   }
 
-
+/* Menu lists display inline */
  ul li {
     display: inline;
     }
 
-
-
+/* Appearance spacing and flow of the main attribute */
 main {
     display: flex;
-    align-content: space-around; /**/
+    align-content: space-around; 
     background: linear-gradient(331deg, rgb(88, 88, 88) 0%, rgb(190, 190, 190) 45%, rgb(48, 47, 47) 100%);
     background-repeat: no-repeat;
     flex-direction: column;
-    /* gap: 20px; */
 }
 
+/* A standard setting for section attribute spacing */
 section {
     display: flex;
-    /* flex-flow: row, wrap; */
-    /* margin-left: 20px; */
     justify-content: space-around;
 }
 
+/* Appearance of sub headings for site categories */
 h2 {
-    /* display: flex;
-    flex: 1 200px; */
     font-size: 25px;
-    /* min-width: 200px; */
-    margin-left: 2vw; /**/
+    margin-left: 2vw; 
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px 1px grey;
 }
 
-/* #work {
-    margin-left: 2vw;
-} */
-
+/* This sets the appearance for the sub headimgs for the project items */
 h3, h4 {
     font-size: 18px;
     color: white;
@@ -96,41 +92,28 @@ h3, h4 {
     text-shadow: 1px 1px 1px grey;
 }
 
-#about {
-    display: flex;
-    flex: 1 20%;
-}
-
- /* article {
-    color: white;
-}  */
-
+/* This class defines the flow of the about me section elements */
 .about-me {
     display: flex;
-    flex-flow: column, wrap;
+    flex-flow: row, wrap;
     justify-content: space-around;
-    /* height: 40vh; */
-    width: 80%;
-    /* max-height: 50vh; */
-    /* padding: 20px; */
 }
 
+/* This sets the appearance for the about me destription text */
 .about-me p {
-    display: flex;
     font: 18px;
     padding: 2vw;
-    /* flex: 70% 300px; */
-    /* max-height: 50vh; */
+
 }
 
+/* This sets a responable size of my portrait image */
 .about-me img {
-    display: flex;
-    height: 40vh;
-    flex: initial;
-
+    width: 30vw;
+    max-height: 300px;
+    max-width: 300px;
 }
 
-
+/* This class defines the flow of my project class items */
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -138,11 +121,11 @@ h3, h4 {
     align-items: flex-start;
 }
 
+/* This class defines the appearance of the project items */
 .project {
     flex-direction: column; 
     width: 30vw;
     border: 2px solid transparent;
-    padding: 10px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 3px 10px 15px gray;
@@ -150,35 +133,34 @@ h3, h4 {
     transition: all 0.2s ease;
 }
 
+/* This adds an effect when a user hovers over a project class item*/
 .project:hover {
     transform: scale(1.05);
     transform: rotate(1deg);
     box-shadow: inset 0px 0px 8px white, 0 0 15px white;
 }
 
+/* The featured class increases the size of the project display */
 .featured { 
     width: 60vw;
 }
 
+/* This is my media section that helps displays on smaller resolutions and devices */
 @media all and (max-width: 768px) {
     header, footer, main, section, article, nav, p {
+        display:flex;
         flex-flow: column, wrap;
         justify-content: space-around;
-        /* gap: 1;  */
         margin: 0; 
         font-size:14px;
     }
+    /* reduces size of sub headings */
     h2, h3 {
         font-size:18px;
     }
 
      .project-list{
+        display:flex;
         flex-flow: column, wrap;
       } 
 }
-
-/* @media screen and (max-width: 500px) {
-    * {
-        flex-direction: column;
-    }
-} */
