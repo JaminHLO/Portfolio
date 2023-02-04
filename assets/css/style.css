@@ -18,10 +18,8 @@ body {
 header, footer {
     display: flex;
     background: black;
-    flex-flow: row, nowrap;
     justify-content: space-between;
     padding-inline-start: 16px;
-    flex: 0, 100%;
 }
 
 /* Appearance and font of top level heading */
@@ -37,7 +35,6 @@ h1 {
 nav {
     display: flex;
     background: black;
-    flex-flow: row, nowrap;
     justify-content: flex-end;
     align-items: center;
 }
@@ -58,7 +55,6 @@ nav a:hover {
 /* Appearance spacing and flow of the main attribute */
 main {
     display: flex;
-    align-content: space-around; 
     background: linear-gradient(331deg, rgb(88, 88, 88) 0%, rgb(190, 190, 190) 45%, rgb(48, 47, 47) 100%);
     background-repeat: no-repeat;
     flex-direction: column;
@@ -90,13 +86,11 @@ h3, h4 {
 /* Class defines the flow of the about me section elements */
 .about-me {
     display: flex;
-    flex-flow: row, wrap;
     justify-content: space-around;
 }
 
-/* Sets the appearance for the about me destription text */
+/* Sets the appearance for the 'about me' destription text */
 .about-me p {
-    font: 18px;
     padding: 2vw;
 
 }
@@ -159,7 +153,7 @@ h3, h4 {
     h1 {
         font-size: 20px;
     }
-    h2, h3, a {
+    h2, h3, h4, a {
         font-size:18px;
     }
 }
@@ -167,16 +161,13 @@ h3, h4 {
 /* Media section that helps displays on even smaller resolutions and devices */
 @media all and (max-width: 425px) {
     header, footer, main, section, article, nav, p {
-        justify-content: center;
-        margin: 0; 
-        padding: 0; 
         font-size:12px;
     }
     /* reduces size of headings even further */
     h1 {
         font-size: 16px;
     }
-    h2, h3, a {
+    h2, h3, h4, a {
         font-size:14px;
     }
 }
