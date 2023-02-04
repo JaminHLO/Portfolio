@@ -150,17 +150,18 @@ h3, h4 {
     header, footer, main, section, article, nav, p {
         display:flex;
         flex-flow: column, wrap;
-        justify-content: space-around;
+        justify-content: center;
         margin: 0; 
+        padding: 0; 
         font-size:14px;
     }
-    /* reduces size of sub headings */
+    /* reduces size of headings */
+    h1 {
+        font-size: 20px;
+    }
+    
     h2, h3 {
         font-size:18px;
     }
 
-     .project-list{
-        display:flex;
-        flex-flow: column, wrap;
-      } 
 }
